@@ -1,0 +1,307 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;                                 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("https://source.unsplash.com/1600x900/?food,meals");
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 30px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    opacity: 0.4;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%
+}
+
+/* Navigation Bar: Logo and image */
+#logo{
+    margin: 10px 34px;
+
+}
+
+#logo img{
+    margin: 3px 6px;
+    height: 20px;
+    width: 20px;
+}
+
+
+/* Navigation Bar: List styling */
+
+#navbar  ul{
+       display: flex;
+       font-family: 'Lobster', cursive
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%
+}
+
+#navbar  ul li {
+      list-style: none;
+      font-size: 1.3rem;
+    }
+
+#navbar  ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    }
+
+#navbar  ul li a:hover{
+    color:black;
+    background-color: white;
+    }
+
+ /* Home Section */
+#home{
+   display: flex;
+   flex-direction: column;
+   padding: 3px 200px;
+   height: 200px;
+   justify-content: center;
+   visibility: 100%;
+   }
+
+#home ::before{
+    content: "";
+    /* background-image: ; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 100%;
+   }    
+
+#home h1{
+    color: black;
+    align-self: center;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    }
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: 'Dancing Script', cursive;
+    }    
+
+#home button{
+    align-self: center;
+    border: 2px solid white;
+    background-color: antiquewhite;
+    color: black;
+    padding: 6px 20px;
+    margin: 17px;
+    font-size: 1rem;
+    border-color: black;
+    border-radius: 2rem;
+    cursor: grab;
+    font-family: 'Noto Serif', serif;
+    }
+
+/* Services Container */
+#services{
+    margin: 34px;
+    display: flex;
+    flex-direction: row; 
+}
+
+#services .box{
+    border: 2px solid gray;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+
+#services .box img{
+    height: 160px;
+    width: 200px;
+    display: flex;
+    margin: auto;
+    }
+
+
+#services .box p{
+    font-size: 1.3rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+/* Client Section */
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-color: teal;
+    background-size: cover;
+    z-index: -1;
+    opacity: 100%;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-items{
+    padding: 40px;
+    border-end-end-radius: 40px;
+}
+
+#clients img{
+    height: 80px;
+}
+/* Contact Section*/
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 10;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input{
+    display: flex;
+
+}
+
+#contact-box text area{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+}
+
+#contact-box form{
+    width: 15%;
+    
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#contact-box button{
+    align-self: center;
+    border: -1px solid white;
+    background-color: transparent;
+    color: black;
+    padding: 6px 20px;
+    margin: 17px;
+    font-size: 0.8rem;
+    border-color: black;
+    border-radius: 1rem;
+    cursor: grab;
+    font-family: 'Noto Serif', serif;
+}
+
+footer{
+    background: black;
+    opacity: 0.6;
+    color: white;
+    padding: 9px 20px;
+    font-size: 1rem;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}    
+
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}  
+
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
